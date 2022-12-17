@@ -26,4 +26,10 @@ class HomeScreenTest: TestBaseClass {
         XCTAssertEqual(homeScreen.getSuccessMsg(),"Thanks for Joining!")
   
     }
+    func testPerformance(){
+        self.measure {
+            homeScreen.enterCityName(cityName: "Dhaka")
+            homeScreen.tapEnrollButton()
+        }
+    }
 }

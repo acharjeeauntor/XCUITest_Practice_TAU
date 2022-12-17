@@ -20,5 +20,6 @@ class TestBaseClass: XCTestCase {
     override func tearDownWithError() throws {
         super.tearDown()
         app.terminate()
+       
     }
 }
